@@ -21,10 +21,10 @@ layout: default
           camera: {{post.camera | jsonify}}
         });
       </script>
-      <li>
+      <li style="position: absolute; top: 160px; left: 310px">
         <a href="{{ site.baseurl }}{{ post.url }}">
           {{ post.title }}
-          <div class="viewer-container" style="z-index: 10"
+          <div class="viewer-container" style="z-index: 10;"
             onmouseenter="indexView.enter(this, {{ forloop.index0 }})"
             onmouseleave="indexView.leave(this)">
             <img src="{{ site.baseurl }}{{post.image}}" />
