@@ -24,7 +24,7 @@ layout: default
       <li>
         <a href="{{ site.baseurl }}{{ post.url }}">
           {{ post.title }}
-          <div class="viewer-container"
+          <div class="viewer-container" style="z-index: 10"
             onmouseenter="indexView.enter(this, {{ forloop.index0 }})"
             onmouseleave="indexView.leave(this)">
             <img src="{{ site.baseurl }}{{post.image}}" />
@@ -66,7 +66,7 @@ layout: default
         </form>
       </div>
     </div>
-    <button id="viewPreferences" style="position: absolute; top:120px; left: 20px; z-index: 100;" onclick="showPrefs()">View Selected Preferences</button>
+    <button id="viewPreferences" style="position: absolute; top:140px; left: 20px; z-index: 100;" onclick="showPrefs()">View Selected Preferences</button>
 
 
     <div id="replies">
