@@ -6,9 +6,9 @@ layout: default
   var indexView = new JscadGallery.IndexView();
 </script>
 
-<h1>Jscad Gallery</h1>
+<!--<h1>Jscad Gallery</h1>-->
 
-<ul id="index">
+<ul id="index" style="position: absolute; top: 160px; left: 310px">
     {% for post in site.posts %}
       <script>
         indexView.add({
@@ -21,7 +21,7 @@ layout: default
           camera: {{post.camera | jsonify}}
         });
       </script>
-      <li style="position: absolute; top: 160px; left: 310px">
+      <li>
         <a href="{{ site.baseurl }}{{ post.url }}">
           {{ post.title }}
           <div class="viewer-container" style="z-index: 10;"
